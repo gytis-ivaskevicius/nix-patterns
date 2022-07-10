@@ -41,7 +41,7 @@ Supported systems should be more of a metadata hint instead of something that fo
     - Overlays but only with `prev` argument. `overlay :: pkgs -> attrsOf derivation`
     - Attribute set of functions that can be called with `pkgs.callPacage` to retrieve derivation. `packages :: attrsOf (attrsOf any -> derivation)`
 
-- Add ability to overwrite one of the inputs to null via `follows` mechanism. This should improve usability of standard flakes like defined in [01-packages-producer example](01-packages-producer)
+- [Add ability set one of the inputs to null via](https://github.com/NixOS/nix/issues/6780) `follows` mechanism. This should improve usability of standard flakes like defined in [01-packages-producer example](01-packages-producer)
 
-- Add some sort of autoupdate of flake.lock dependency in case it is a subflake.
+- [Add some sort of autoupdate of flake.lock dependency in case it is a subflake](https://github.com/NixOS/nix/issues/6779).
 
