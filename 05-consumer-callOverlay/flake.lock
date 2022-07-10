@@ -1,0 +1,72 @@
+{
+  "nodes": {
+    "firstPackageSet": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-Q2OegmrC1UAJcQT5akBcwRR5igmGmyyOz9zk6Q2px8Q=",
+        "path": "../01-packages-producer",
+        "type": "path"
+      },
+      "original": {
+        "path": "../01-packages-producer",
+        "type": "path"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1657228070,
+        "narHash": "sha256-Vpm4/bQUrFwC+g06mWGuPZShVBWTzeINRF+t0liAn3o=",
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1657228070,
+        "narHash": "sha256-Vpm4/bQUrFwC+g06mWGuPZShVBWTzeINRF+t0liAn3o=",
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "firstPackageSet": "firstPackageSet",
+        "nixpkgs": "nixpkgs_2",
+        "secondPackageSet": "secondPackageSet"
+      }
+    },
+    "secondPackageSet": {
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-sTx1kUzdADm/fsSmhEai6r4WUbmpu3NcYxQYvec3loI=",
+        "path": "../02-packages-producer-with-dev-deps",
+        "type": "path"
+      },
+      "original": {
+        "path": "../02-packages-producer-with-dev-deps",
+        "type": "path"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
