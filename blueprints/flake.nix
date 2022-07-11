@@ -4,7 +4,7 @@
   outputs = { self, nixpkgs }: {
     systems = [ "x86_64-linux" ];
 
-    protoDerivations = {
+    blueprints = {
       zlib-ng = import ./derivations/zlib-ng.nix;
       hello = import ./derivations/hello.nix;
     };
@@ -15,7 +15,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in
       {
-        packages = builtins.mapAttrs (name: value: pkgs.callPackage value {}) self.protoDerivations;
+        packages = builtins.mapAttrs (name: value: pkgs.callPackage value {}) self.blueprints;
       };
 
 
