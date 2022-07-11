@@ -44,7 +44,7 @@ Supported systems should be more of a metadata hint instead of something that fo
 
 - Invent simpler data structures for exposing packages. There are two structures that I can think of:
     - Overlays but only with `prev` argument. `overlay :: pkgs -> attrsOf derivation`
-    - Attribute set of functions that can be called with `pkgs.callPacage` to retrieve derivation. `packages :: attrsOf (attrsOf any -> derivation)`
+    - Attribute set of functions that can be called with `pkgs.callPacage` to retrieve derivation. `blueprints :: attrsOf (attrsOf any -> derivation)`
 
 - [Add ability to set one of the inputs to null via](https://github.com/NixOS/nix/issues/6780) `follows` mechanism. This should improve the usability of standard flakes as defined in [01-packages-producer example](01-packages-producer)
 
