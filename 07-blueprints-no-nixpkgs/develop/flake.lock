@@ -1,0 +1,56 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1657228070,
+        "narHash": "sha256-Vpm4/bQUrFwC+g06mWGuPZShVBWTzeINRF+t0liAn3o=",
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gytis-ivaskevicius",
+        "repo": "nixpkgs",
+        "rev": "10e0ac7e0a764e64f967d78869671dda37001160",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1675600654,
+        "narHash": "sha256-ipsDTkzRq1CAl2g5tYd7ugjVMSKF6KLh9F+5Kso0lT0=",
+        "path": "/nix/store/acmc36pgmyvj83318nqiam2bkjvqzblx-source",
+        "rev": "cff83d5032a21aad4f69bf284e95b5f564f4a54e",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "root": "root_2"
+      }
+    },
+    "root_2": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-wL0BMY03W2AUH2384ejIaMKTlJCjkmBd1IPaT55Xq+Q=",
+        "path": "../",
+        "type": "path"
+      },
+      "original": {
+        "path": "../",
+        "type": "path"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
